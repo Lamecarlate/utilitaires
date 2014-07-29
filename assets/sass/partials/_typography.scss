@@ -1,0 +1,33 @@
+/***********************************
+==TYPOGRAPHY
+***********************************/
+
+@import "compass/css3";
+
+// @include font-face("AlegreyaSans", font-files(
+// 	"alegreyasans-light.woff",
+// 	"alegreyasans-light.ttf",
+// 	"alegreyasans-light.svg#alegreya_sanslight"),
+// 	"alegreyasans-light.eot", 'normal', 'normal');
+@include font-face("AlegreyaSans", font-files(
+	"alegreyasans-medium.woff",
+	"alegreyasans-medium.ttf",
+	"alegreyasans-medium.svg#alegreya_sansmedium"),
+	"alegreyasans-medium.eot", 'normal', 'normal');
+@include font-face("NadiaSerif", font-files(
+	"nadia_serif.woff",
+	"nadia_serif.ttf",
+	"nadia_serif.svg#nadia_serifnormal"),
+	"nadia_serif.eot", 'normal', 'normal');
+
+body {
+	font-family: "AlegreyaSans", 'Arial', 'sans-serif';
+}
+
+@for $i from 1 through 6 {
+	h#{$i}, .h#{$i}-like { 
+		font-family: "NadiaSerif", 'serif';
+		font-weight: normal;
+		color: $primary-color-darken;
+	}
+}

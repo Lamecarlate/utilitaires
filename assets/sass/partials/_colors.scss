@@ -1,0 +1,34 @@
+// colors
+
+//$primary-color : rgb(56, 192, 255);
+$primary-color : rgb(0, 123, 179);
+$primary-color : rgb(16, 152, 215);
+//$primary-color : rgb(0, 153, 224);
+$primary-color-darken-extra: adjust-lightness($primary-color, -30); 
+$primary-color-darken: adjust-lightness($primary-color, -5); 
+$primary-color-lighten: adjust-lightness($primary-color, 15); 
+$primary-color-lighten-extra: adjust-lightness($primary-color, 50); 
+
+$secondary-color: rgb(150, 78, 20);
+$secondary-color-darken-extra: adjust-lightness($secondary-color, -30);
+$secondary-color-darken: adjust-lightness($secondary-color, -10);
+$secondary-color-lighten: adjust-lightness($secondary-color, 45);
+$secondary-color-lighten-extra: adjust-lightness($secondary-color, 50);
+
+// ui
+$selected: $primary-color;
+$link-normal: $primary-color-darken;
+$link-hover: $primary-color;
+$link-visited: $primary-color-darken-extra;
+
+// messages
+$normal: $primary-color-darken;
+$normal-lighten: $primary-color-lighten-extra;
+$error: #b94a48;
+$error-lighten: adjust-lightness($error, 38);
+$info: #3a87ad;
+$info-lighten: adjust-lightness($info, 38);
+$warn: #c09853;
+$warn-lighten: adjust-lightness($warn, 38);
+$success: #468847;
+$success-lighten: adjust-lightness($success, 60);

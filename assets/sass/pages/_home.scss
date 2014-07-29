@@ -1,0 +1,42 @@
+/* =HOME
+---------------------------------------------------*/
+.page-home {
+
+	.main-content {
+		border-left: none;
+	}
+
+	.home-links {
+		padding-left: 0;
+	}
+
+	.home-link-wrapper {
+		display: inline-block;
+		width: 290px;
+		vertical-align: top;
+	}
+
+	.home-link {
+		display: block;
+		text-decoration: none;
+		color: $link-normal;
+		border: 1px solid rgba(0,0,0,.5);
+		padding-left: 50px;
+		background-color: $primary-color-lighten-extra;
+
+		&:hover,
+		&:focus {
+			background-color: #fff;
+		}
+	}
+
+	.home-link-title,
+	.home-link-description {
+		padding: 0 5px;
+	}
+
+	.home-link-description {
+		padding-bottom: 5px;
+	}
+	
+}

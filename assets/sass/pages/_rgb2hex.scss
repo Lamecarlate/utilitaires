@@ -1,0 +1,41 @@
+.page-rgb2hex {
+	
+	.color-sample {
+
+		position: relative;
+		display: inline-block;
+		
+		&:before, &:after {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 120px;
+		}
+
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 400px;
+			height: 100px;
+			background-image: image-url('damier.png');
+		}
+
+		.sample {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 400px;
+			height: 100px;
+			//background: rgba(red,.5);
+		}
+
+	}
+
+
+
+}

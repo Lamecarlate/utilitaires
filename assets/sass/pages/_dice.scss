@@ -1,0 +1,34 @@
+.page-dice {
+
+	#throw-dice {
+		display: table;
+		width: 100%;
+	}
+
+	.inputs {
+		// display: inline-block;
+		display: table-cell;
+		width: 120px;
+		vertical-align: top;
+	}
+
+	.result-wrapper {
+		// display: inline-block;
+		display: table-cell;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.result-img {
+		font-size: 4em;
+		text-align:center;
+
+		&.wait {
+			font-size: 1em;
+		}
+	}
+
+	.form-group button:first-child {
+		margin-left: 0;
+	}
+}
